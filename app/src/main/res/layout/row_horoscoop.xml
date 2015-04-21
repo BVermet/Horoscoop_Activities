@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnToonInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewNaamHoroscoop"
+        android:layout_marginLeft="36dp"
+        android:layout_toRightOf="@+id/textViewNaamHoroscoop"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Info" />
+
+    <ImageView
+        android:id="@+id/imgHoroscoop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/maagd"
+        android:contentDescription="Horoscoopafbeelding" />
+
+    <TextView
+        android:id="@+id/textViewNaamHoroscoop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgHoroscoop"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/imgHoroscoop"
+        android:text="naam"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

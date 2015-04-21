@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Horoscoop</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="lblGegevens">Uw gegevens:</string>
+    <string name="txtNaam">Uw naam</string>
+    <string name="txtVoorNaam">Uw voornaam</string>
+    <string name="lblGeboortejaar">Geboortejaar:</string>
+    <string name="btnGeboortejaar">Selecteer uw geboortejaar</string>
+    <string name="btnHoroscoop">Selecteer uw horoscoop</string>
+    <string name="title_activity_select_geboortejaar">SelectGeboortejaarActivity</string>
+    <string name="title_activity_horoscoop">HoroscoopActivity</string>
+
+</resources>

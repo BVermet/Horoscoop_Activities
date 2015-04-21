@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblGegevens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/lblGegevens"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txtNaam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblGegevens"
+        android:layout_below="@+id/lblGegevens"
+        android:ems="10"
+        android:hint="uw naam"
+        android:layout_alignParentEnd="true"
+        android:text="@string/txtNaam">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtVoorNaam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtNaam"
+        android:layout_below="@+id/txtNaam"
+        android:ems="10"
+        android:hint="uw voornaam"
+        android:layout_alignEnd="@+id/txtNaam"
+        android:text="@string/txtVoorNaam" />
+
+    <TextView
+        android:id="@+id/lblGeboortejaar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtVoorNaam"
+        android:layout_below="@+id/txtVoorNaam"
+        android:text="@string/lblGeboortejaar"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btnGeboortejaar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblGeboortejaar"
+        android:layout_below="@+id/lblGeboortejaar"
+        android:text="@string/btnGeboortejaar"
+        android:onClick="selecteerGeboortejaar"
+        android:layout_alignEnd="@+id/txtVoorNaam" />
+
+    <Button
+        android:id="@+id/btnHoroscoop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnGeboortejaar"
+        android:layout_below="@+id/btnGeboortejaar"
+        android:text="@string/btnHoroscoop"
+        android:onClick="selecteerHoroscoop"
+        android:layout_alignEnd="@+id/btnGeboortejaar" />
+
+    <ImageView
+        android:id="@+id/imgHoroscoopMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher"
+        android:contentDescription="Horoscoopafbeelding"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
